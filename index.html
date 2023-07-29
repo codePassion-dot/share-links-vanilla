@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharing Links</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="app"></main>
+    <script type="module" src="/src/main.ts"></script>
+    <template id="sign-in-page-template">
+      <div class="sign-in-container">
+        <h1>
+          <img src="" alt="" />
+          <span>devlinks</span>
+        </h1>
+        <div id="form-container">
+          <h2 id="form-title">Login</h2>
+          <h2 id="form-description">
+            Add your details below to get back into the app
+          </h2>
+          <form id="form">
+            <label>
+              Email Address
+              <div>
+                <img src="/mail.svg" type="svg" alt="mail icon" />
+                <input
+                  placeholder="e.g. alex@email.com"
+                  name="email"
+                  type="email"
+                  required
+                />
+              </div>
+            </label>
+            <label>
+              Password
+              <div>
+                <img src="/lock.svg" type="svg" alt="mail icon" />
+                <input
+                  placeholder="Enter your password"
+                  name="password"
+                  type="password"
+                  required
+                />
+              </div>
+            </label>
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
